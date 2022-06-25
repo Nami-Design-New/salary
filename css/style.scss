@@ -1,0 +1,169 @@
+$mainColor: #008DC3;
+$secondColor: #f5f4de;
+$gold: #ffd700;
+$white-color: #ffffff;
+$black-color: #292929;
+$transition: all 0.3s ease-in-out;
+$shadow: 0px 2px 4px #00000030;
+$BigShadow: 0px 8px 24px #00000030;
+
+@font-face {
+  font-family: cairo;
+  font-display: swap;
+  src: url(../webfonts/cairo.ttf);
+}
+
+* {
+  font-family: "cairo";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  direction: rtl;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/// 
+/// 
+.row {
+  margin: 0;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+a {
+  transition: all .3s ease-in-out;
+}
+
+.navbar {
+  background: linear-gradient(to right, #057d54 22%, #012354 55%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .navbar-brand {
+    height: 50px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #9d9d9d;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .nav-link {
+    color: #9d9d9d;
+    padding: 15px;
+    line-height: 20px;
+    font-size: 14px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .navbar-toggler {
+    border: 1px solid #333;
+    padding: 0px 4px;
+    // margin-left: 15px;
+
+  }
+}
+
+body {
+  font-family: Cairo, sans-serif;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+.btn,
+.form-control {
+  border-radius: 0
+}
+
+.pageContent {
+  margin-top: 30px;
+
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+}
+
+.text-danger {
+  color: #a94442;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+  @media (max-width:768px) {
+      margin-bottom: 29px;
+  
+  }
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  border-radius: 0;
+  border-bottom: transparent;
+  box-shadow: inset 0 1px 1px #00000014;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+  .form-check-input {
+    font-size: 34px;
+    margin-top: 4px;
+    border-color: #000;
+  }
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
